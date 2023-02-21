@@ -1,0 +1,77 @@
+
+:root {
+    --dark-blue: #1D203C;
+}
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.menuHeader {
+    position: absolute;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #262626;
+    color: white;
+    height: 73px;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 458px;
+}
+.navItem{
+    margin: .5rem;
+}
+footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 151px;
+    background-color: #1D203C;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+  }
+  
+  .iconDiv {
+    grid-row: 2/2;
+    grid-column: 2/2;
+  }
+  
+  .iconDiv iconify-icon {
+    font-size: 36px;
+    margin: 1rem;
+  }
+  
+  .joinNewsletter {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    grid-row: 1/1;
+    grid-column: 2/2;
+  }
+  
+  .joinNewsletter p{
+    padding: .5rem;
+    background-color:#F0F0F0;
+    border-radius: 27.3711px 0px 0px 27.3711px;
+    border-right: 1px solid black;
+    max-height: 32px;
+    white-space: nowrap;
+  }
+  
+  .joinNewsletter button {
+    padding: .5rem;
+    background-color: #7280FF;
+  }
+  .joinNewsletter input {
+    padding: .5rem;
+  }
+  .footerLogo {
+    width: 125px;
+    grid-row: 1/3;
+  }
