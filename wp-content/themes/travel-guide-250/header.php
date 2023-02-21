@@ -14,5 +14,4 @@
     <h3 class="navItem"> Things to Do </h3>
     <h3 class="navItem"> History </h3>
     <h3 class="navItem"> Travel </h3>
-
 </div>
