@@ -1,0 +1,1 @@
+<!-- this will uniquely generate the template for the Post type of Album -->

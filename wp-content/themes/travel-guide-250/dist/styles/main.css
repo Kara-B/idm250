@@ -1,0 +1,160 @@
+
+:root {
+    --dark-blue: #1D203C;
+}
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.menuHeader {
+    position: absolute;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #262626;
+    color: white;
+    height: 73px;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 458px;
+}
+.navItem{
+    margin: .5rem;
+}
+footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 151px;
+    background-color: #1D203C;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+  }
+  
+  .iconDiv {
+    grid-row: 2/2;
+    grid-column: 2/2;
+  }
+  
+  .iconDiv iconify-icon {
+    font-size: 36px;
+    margin: 1rem;
+  }
+  
+  .joinNewsletter {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    grid-row: 1/1;
+    grid-column: 2/2;
+  }
+  
+  .joinNewsletter p{
+    padding: .5rem;
+    background-color:#F0F0F0;
+    border-radius: 27.3711px 0px 0px 27.3711px;
+    border-right: 1px solid black;
+    max-height: 32px;
+    white-space: nowrap;
+  }
+  
+  .joinNewsletter button {
+    padding: .5rem;
+    background-color: #7280FF;
+  }
+  .joinNewsletter input {
+    padding: .5rem;
+  }
+  .footerLogo {
+    width: 125px;
+    grid-row: 1/3;
+  }
+  /* Start of Single Styles */
+  h2 {
+    font-weight: 800;
+    padding: 1rem;
+  }
+  
+  h3 {
+    text-decoration: underline;
+  }
+  
+  ol {
+    line-height: 1.5rem;
+  }
+  
+  blockquote {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight:800;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    width: fit-content;
+  }
+  blockquote p {
+    font-style: italic;
+    align-self: end;
+    font-weight: 400;
+    
+  }
+  #quoteDec {
+    position: absolute;
+    z-index: 1;
+    align-self: start;
+    
+  }
+  
+  figure {
+    margin: 1rem;
+  }
+  figcaption {
+    font-style: italic;
+    font-size: .8rem;
+  }
+  
+  .hero img {
+    filter: brightness(55%);
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+  }
+  
+  
+  button {
+    background-color: white;
+    border: 0.741177px solid black;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: .5rem;
+    transition: all .2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color:#1D203C;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .featureDescript {
+    background-color: #D55638;
+    color: white;
+    margin: 1rem;
+    padding: .2rem;
+  }
+  
+  .featureDescript p {
+    background-color: white;
+    color: black;
+    line-height: 1.5rem;
+    margin: .5rem 0 0;
+    padding: .5rem;
+  }
