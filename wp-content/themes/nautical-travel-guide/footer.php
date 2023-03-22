@@ -9,10 +9,9 @@
   </div>
   <div class="joinNewsletter">
     <p> Join Our Newsletter </p>
-    <input type="text" value="Your Email">
+    <input type="text" placeholder="Your Email">
     <button> <iconify-icon icon="material-symbols:arrow-right-alt-rounded" style="color: white;"></iconify-icon> </button>
   </div>
-  <?php wp_nav_menu(['theme_location' => 'footer-menu']); ?>
 </footer>
 <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 <?php wp_footer(); ?>

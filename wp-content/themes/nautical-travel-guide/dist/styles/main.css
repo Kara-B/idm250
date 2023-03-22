@@ -23,7 +23,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-}
+  }
   .menu {
     /* position: fixed; */
     display: flex;
@@ -36,12 +36,13 @@
     color: white;
     font-family: "Avenir-Black";
     height: 75px;
+    margin-bottom: 2rem;
     padding: 1rem;
     width: 100%;
 }
  .menu ul {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     margin: .5rem;
     color: white;
     list-style: none;
@@ -93,8 +94,10 @@ footer {
   }
   
   .joinNewsletter button {
+    height: 33px;
     padding: .5rem;
     background-color: #7280FF;
+    margin: 0;
   }
   .joinNewsletter input {
     padding: .5rem;
@@ -223,13 +226,99 @@ footer {
     margin: 1rem;
     padding: .2rem;
   }
-  
   .featureDescript p {
     background-color: white;
     color: black;
     line-height: 1.5rem;
     margin: .5rem 0 0;
     padding: .5rem;
+  }
+
+  /*  Midsection Style */
+
+  .midsection {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  
+  .midsection h1 {
+    color: white;
+    padding: 1rem;
+    z-index: 200;
+  }
+  .midsection img {
+    filter: brightness(50%);
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 281px;
+    object-fit: cover;
+    z-index:1;
+  }
+  .midsection p {
+    color: white;
+    background: rgba(28, 28, 28, 0.4);
+    height: 100%;
+    font-size: 1.35rem;
+    justify-self: center;
+    align-self:center;
+    padding: .7rem;
+    width: 80%;
+    z-index: 200;
+  }
+  /* Page Hero */
+  .hero {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+  .hero img {
+    filter: brightness(55%);
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+  }
+  .hero svg {
+    position: relative;
+    margin-top: -1.285rem;
+    z-index: 100;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    color: white;
+    z-index:100;
+  }
+
+  /* Event Card Style */
+  .eventCard {
+    background-color: white;
+    border: 1px solid black;
+    filter: drop-shadow(-6.13952px 8.77074px 0px #FF4127);
+    height: 22rem;
+    width: 15em;
+  }
+  .eventCard img {
+    object-fit: cover;
+    width: 100%
+  }
+  
+  .eventCard_Headings {
+    padding: .5rem;
+  }
+  
+  .eventCard_Info {
+    border-top: 1px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+  }
+  
+  .eventCard_Detail {
+    display: flex;
+    align-items: center;
   }
 
   /* 404 Error Style */
@@ -250,3 +339,5 @@ footer {
   .column404 h1 {
     grid-column: 1/4;
   }
+
+  /* Component Styles */
