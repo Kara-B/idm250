@@ -67,28 +67,28 @@ function register_custom_taxonomies()
 {
     $args = [
         'labels' => [
-            'name' => 'Business Categories',
-            'singular_name' => 'Business Category',
-            'search_items' => 'Search Business Categories',
-            'all_items' => 'All Business Categories',
-            'parent_item' => 'Parent Business Category',
-            'parent_item_colon' => 'Parent Business Type:',
-            'edit_item' => 'Edit Business Category',
-            'update_item' => 'Update Business Category',
-            'add_new_item' => 'Add New Business Category',
-            'new_item_name' => 'New Business Type Name',
-            'menu_name' => 'Business Categories',
+            'name' => 'Event Categories',
+            'singular_name' => 'Event Category',
+            'search_items' => 'Search Event Categories',
+            'all_items' => 'All Event Categories',
+            'parent_item' => 'Parent Event Category',
+            'parent_item_colon' => 'Parent Event Type:',
+            'edit_item' => 'Edit Event Category',
+            'update_item' => 'Update Event Category',
+            'add_new_item' => 'Add New Event Category',
+            'new_item_name' => 'New Event Type Name',
+            'menu_name' => 'Event Categories',
         ],
         'hierarchical' => true,
         'show_ui' => true,
         'show_admin_column' => true,
         'query_var' => true,
-        'rewrite' => ['slug' => 'business/categories'],
+        'rewrite' => ['slug' => 'event/categories'],
         'show_in_rest' => true,
     ];
 
-    $taxonomy_name = 'business-categories'; // name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
-    $taxonomy_association = ['business']; // post types to associate with this taxonomy
+    $taxonomy_name = 'event-categories'; // name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
+    $taxonomy_association = ['event']; // post types to associate with this taxonomy
     register_taxonomy($taxonomy_name, $taxonomy_association, $args);
 }
 add_action('init', 'register_custom_taxonomies');
@@ -148,7 +148,7 @@ function my_acf_init()
             'keywords' => [ 'section', 'information', 'images'],
         ]);
         acf_register_block([
-            'name' => 'page_hero',
+            'name' => 'page-hero',
             'title' => __('Page Hero'),
             'description' => __('A hero that is ideal for heading internal pages'),
             'render_callback' => 'my_acf_block_render_callback',
@@ -157,9 +157,18 @@ function my_acf_init()
             'keywords' => ['hero', 'heading', 'header', 'images'],
         ]);
         acf_register_block([
-            'name' => 'event_card',
+            'name' => 'event-card',
             'title' => __('Event Card'),
             'description' => __('A card for displaying abbreviated info on the date and location of an event'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category' => 'formatting',
+            'icon' => 'admin-comments',
+            'keywords' => [ 'section', 'information', 'images'],
+        ]);
+        acf_register_block([
+            'name' => 'description',
+            'title' => __('Page Description'),
+            'description' => __('the description of a page, usually meant as a summary of an event or'),
             'render_callback' => 'my_acf_block_render_callback',
             'category' => 'formatting',
             'icon' => 'admin-comments',

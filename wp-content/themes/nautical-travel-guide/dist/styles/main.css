@@ -94,7 +94,7 @@ footer {
   }
   
   .joinNewsletter button {
-    height: 33px;
+    height: 33px; 
     padding: .5rem;
     background-color: #7280FF;
     margin: 0;
@@ -272,7 +272,8 @@ footer {
     display: flex;
     align-content: center;
     flex-direction: column;
-  }
+    }
+  
   .hero img {
     filter: brightness(55%);
     object-fit: cover;
@@ -288,6 +289,7 @@ footer {
   .hero h1 {
     position: absolute;
     color: white;
+    margin: 80px 2rem auto;
     z-index:100;
   }
 
@@ -340,4 +342,10 @@ footer {
     grid-column: 1/4;
   }
 
-  /* Component Styles */
+  /* Page Description Styles */
+  .pageDescription {
+    background-color:#FF4127;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+  }

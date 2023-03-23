@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php     
+// Template Name: General Information with Midsection
+get_header();
+?>
+
 <!-- <p> This is a template for a new page </p> -->
 <div class="hero">
     <div>
@@ -13,4 +17,5 @@
     </svg>
   </div>
 <?php get_template_part('components/content'); ?>
+<!-- line 19 goes under the title and image  -->
 <?php get_footer(); ?>
