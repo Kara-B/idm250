@@ -166,7 +166,11 @@ footer {
     border: 1px solid black;
     margin: 1rem;
     padding: 1rem;
+    text-align: left;
     width: fit-content;
+  }
+  .wp-block-pullquote {
+    padding: 0;
   }
   cite {
     font-family: 'Avenir-Book';
@@ -221,6 +225,36 @@ footer {
     align-items: center;
     margin: 0 auto;
   }
+  .archiveGrid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 1.2rem 1rem;
+}
+table {
+  font-family: 'Avenir-Book';
+  border-collapse: collapse;
+  width: 100%;
+}
+.wp-block-table th {
+  background-color:#FF4127;
+  color: white;
+  text-align: left;
+  padding: 8px;
+  border: 1.5px solid #333333;
+}
+
+.wp-block-table td {
+  border: 1px solid #aaaaaa;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.w-65{
+  width: 65%;
+}
 
   .featureDescript {
     background-color: #D55638;

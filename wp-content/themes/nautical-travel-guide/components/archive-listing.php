@@ -5,8 +5,8 @@
  */
 ?>
 <div class="" data-component="archive-listing">
-  <div class="">
-    <div class="">
+  <div>
+    <div class="archiveGrid">
       <?php
         if (have_posts()) {
             // Load posts loop.
