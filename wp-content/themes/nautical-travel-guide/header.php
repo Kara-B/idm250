@@ -13,7 +13,15 @@
     type="image/x-icon" />
   <?php endif; ?>
     <!-- <link rel="icon" href="<?php echo $image['url']?>" type="image/x-icon" /> -->
-    <title>Visit The Inner Harbor</title>
+    <title>
+    <?php
+    if (is_front_page() || is_home()) {
+        bloginfo('name');
+    } else {
+        wp_title('', true, 'right');
+    }
+  ?>
+  </title>
     <?php wp_head(); ?>
 </head>
 

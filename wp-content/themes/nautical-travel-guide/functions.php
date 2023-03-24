@@ -183,6 +183,24 @@ function my_acf_init()
             'icon' => 'admin-comments',
             'keywords' => [ 'section', 'information', 'map'],
         ]);
+        acf_register_block([
+            'name' => 'text-divider',
+            'title' => __('Title Divider'),
+            'description' => __('A divider with a blue bar covering the length of the screen and custom text'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category' => 'formatting',
+            'icon' => 'admin-comments',
+            'keywords' => [ 'section', 'information', 'divider', 'heading'],
+        ]);
+        acf_register_block([
+            'name' => 'general-event',
+            'title' => __('General Event'),
+            'description' => __('A general block that displays a heading over an image, meant to act as a link to page with more information on an event'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category' => 'formatting',
+            'icon' => 'admin-comments',
+            'keywords' => [ 'section', 'information', 'block', 'heading', 'image'],
+        ]);
     }
 }
 add_action('acf/init', 'my_acf_init');

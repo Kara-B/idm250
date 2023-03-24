@@ -1,8 +1,6 @@
-
- <?php get_header(); ?>
- <div class="homeHero">
+<div class="homeHero">
         <div>
-            <h1> <?php echo get_the_title(); ?> </h1>
+            <h1> <? php echo get_the_title(); ?> </h1>
             <img src="<?php echo get_the_post_thumbnail_url(); ?>"
                 alt="" /> 
             </div>
@@ -11,5 +9,3 @@
           <circle cx="640" cy="37" r="32.5" fill="white" stroke="black" stroke-width="9"/>
         </svg>
     </div>
- <?php get_template_part('components/content'); ?>
- <?php get_footer(); ?>
