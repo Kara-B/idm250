@@ -36,7 +36,6 @@
     color: white;
     font-family: "Avenir-Black";
     height: 75px;
-    margin-bottom: 2rem;
     padding: 1rem;
     width: 100%;
 }
@@ -218,7 +217,10 @@ footer {
     font-weight: 600;
   }
   
-
+  .wp-block-columns {
+    align-items: center;
+    margin: 0 auto;
+  }
 
   .featureDescript {
     background-color: #D55638;
@@ -282,7 +284,7 @@ footer {
   }
   .hero svg {
     position: relative;
-    margin-top: -1.285rem;
+    margin-top: -2.2rem;
     z-index: 100;
   }
   
@@ -298,8 +300,8 @@ footer {
     background-color: white;
     border: 1px solid black;
     filter: drop-shadow(-6.13952px 8.77074px 0px #FF4127);
-    height: 22rem;
     width: 15em;
+    margin: 1rem;
   }
   .eventCard img {
     object-fit: cover;
@@ -348,4 +350,54 @@ footer {
     color: white;
     margin: 1rem;
     padding: 1rem;
+  }
+.pageDescription p{
+ font: 1.2rem;
+}
+  /* Special Buisness Template */
+  .businessHighlight {
+    background: #FBFBFB;
+    border: 3px solid #000000;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: fit-content;
+    width: 783px;
+    margin: 5rem auto;
+  }
+  .businessHighlight img {
+    display: block;
+    grid-column: 1/1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .businessHighlight h1 {
+    font-size: 44px;
+  }
+  .businessHighlight_info {
+    margin: 1rem;
+  }
+  .locationBar {
+    background-color:#FF4127;
+    border-radius: 26px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: .5rem;
+    width: fit-content;
+  }
+  @media only screen and (max-width: 535px){
+    .businessHighlight {
+      display: grid;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 1fr;
+      height: fit-content;
+      width: 441px;
+      margin: 5rem auto;
+    }
+    .businessHighlight img{
+      grid-row: 1/1;
+    }
   }

@@ -168,11 +168,20 @@ function my_acf_init()
         acf_register_block([
             'name' => 'description',
             'title' => __('Page Description'),
-            'description' => __('the description of a page, usually meant as a summary of an event or'),
+            'description' => __('the description of a page, usually meant as a summary of an event'),
             'render_callback' => 'my_acf_block_render_callback',
             'category' => 'formatting',
             'icon' => 'admin-comments',
-            'keywords' => [ 'section', 'information', 'images'],
+            'keywords' => [ 'section', 'information', 'paragraph'],
+        ]);
+        acf_register_block([
+            'name' => 'location-bar',
+            'title' => __('Display Address'),
+            'description' => __('A small block to highlight a buisnesses or events address'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category' => 'formatting',
+            'icon' => 'admin-comments',
+            'keywords' => [ 'section', 'information', 'map'],
         ]);
     }
 }
